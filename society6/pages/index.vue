@@ -3,14 +3,17 @@
     <h1>アジアから見た太平洋戦争</h1>
     <li>日本でおきた事</li>
     <Hirosima />
-    <br>
+    <br />
     <Nagasaki />
-    <hr color="red" />
+
+    <hr style="width: 400px; margin-left: 0" color="red" />
     <li>中国でおきた事</li>
     <Theother />
     <br />
     <Nanasan />
-    <br />
+
+    <hr style="width: 400px; margin-left: 0" color="red" />
+    <li>韓国でおきた事</li>
   </div>
 </template>
 
