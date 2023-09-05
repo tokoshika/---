@@ -1,46 +1,40 @@
 <template>
-  <button @click="showAns" class="btn" :class="{ red: onActive }">
+  <button @click="nanasanOpen" class="btn" :class="{ red: nanasanActive }">
     七三一部隊
   </button>
 
-  <div v-if="isActive">
+  <div v-if="nanasanActive">
     <p>
-      日本政府としては、日本軍の南京入城（1937年）後、<br />
-      非戦闘員の殺害や略奪行為等があったことは<span style="color: red"
-        >否定できないと</span
-      >考えています。<br />
-      しかしながら、被害者の具体的な人数については諸説あり、<br />
-      政府としてどれが正しい数かを認定することは困難であると考えています。
+      日本軍による人体実験の舞台は中国でした。その中で最もよく知られている
+      <br />七三一部隊（関東軍防疫給水部）は、石井四郎軍医中将（階級は終戦時）によって作られ、
+      中国東北部のハルビン郊外にありました。
+      <br />それは致死的な生体実験を秘密裏に行うための特別な一大研究施設でした。
     </p>
-    <p>(日本国外務省ホームページより抜粋)</p>
-  </div>
-
-  <div v-if="isActive">
-    <p>
-      中国政府の主張では、<span style="color: red">約30万人</span><br />
-      日本国内では、それを否定する声もあり。
-    </p>
+    <p>(1) 手術の練習台にする</p>
+    <p>(2) 病気に感染させる</p>
+    <p>(3) 確立されていない治療法を試す</p>
+    <p>(4) 極限状態における人体の変化や限界を知る</p>
     <hr />
-    <button class="nanjin" @click="nanjinOpen">南京大虐殺記念館</button>
+    <button class="nanjin" @click="museumOpen">
+      侵華日軍第731部隊罪証陳列館
+    </button>
   </div>
-  <div v-if="nanjinActive">
-    <Nanjin />
+  <div v-if="museumActive">
+    <h1>This is MuseamAvtive</h1>
   </div>
 </template>
 
 <script setup>
   import { ref } from "vue";
-  const isActive = ref(false);
-  const onActive = ref(false);
-  const nanjinActive = ref(false);
+  const nanasanActive = ref(false);
+  const museumActive = ref(false);
 
-  const showAns = () => {
-    isActive.value = !isActive.value;
-    onActive.value = !onActive.value;
+  const nanasanOpen = () => {
+    nanasanActive.value = !nanasanActive.value;
   };
 
-  const nanjinOpen = () => {
-    nanjinActive.value = !nanjinActive.value;
+  const museumOpen = () => {
+    museumActive.value = !museumActive.value;
   };
 </script>
 

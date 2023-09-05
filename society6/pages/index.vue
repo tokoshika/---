@@ -10,18 +10,16 @@
     <br />
     <Nanasan />
     <br />
-    <p>【中国人民抗日戦争勝利記念日】</p>
-    <Victory />
   </div>
 </template>
 
 <style scoped>
   .main-container {
-       margin: 0 auto;
-    margin-left:10%;
+    margin: 0 auto;
+    margin-left: 10%;
   }
 
   p {
-    color:green;
+    color: rgb(45, 91, 45);
   }
 </style>
