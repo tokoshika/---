@@ -7,13 +7,14 @@
     <p>
       日本軍による人体実験の舞台は中国でした。その中で最もよく知られている
       <br />七三一部隊（関東軍防疫給水部）は、石井四郎軍医中将（階級は終戦時）によって作られ、
-      中国東北部のハルビン郊外にありました。
+      中国東北部の<span style="color: red">ハルビン</span>郊外にありました。
       <br />それは致死的な生体実験を秘密裏に行うための特別な一大研究施設でした。
     </p>
     <p>(1) 手術の練習台にする</p>
     <p>(2) 病気に感染させる</p>
     <p>(3) 確立されていない治療法を試す</p>
     <p>(4) 極限状態における人体の変化や限界を知る</p>
+    <p><span style="color:green">(大阪市立大学大学院文学研究科資料より抜粋)</span></p>
     <hr />
     <button class="nanjin" @click="museumOpen">
       侵華日軍第731部隊罪証陳列館
@@ -21,6 +22,7 @@
   </div>
   <div v-if="museumActive">
     <h1>This is MuseamAvtive</h1>
+    <img src="~/assets/731.jpg" />
   </div>
 </template>
 
@@ -50,12 +52,12 @@
   }
 
   .red {
-    color: red;
+    color:white;
     background-color: grey;
   }
 
   .nanjin {
-    width: 300px;
+    width: 400px;
     margin-bottom: 1rem;
     font-size: 1.3rem;
   }

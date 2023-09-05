@@ -1,11 +1,12 @@
 <template>
   <div class="main-container">
     <h1>アジアから見た太平洋戦争</h1>
-    <p>【日本でおきた事】</p>
+    <li>日本でおきた事</li>
     <Hirosima />
+    <br>
     <Nagasaki />
     <hr color="red" />
-    <p>【中国でおきた事】</p>
+    <li>中国でおきた事</li>
     <Theother />
     <br />
     <Nanasan />
@@ -19,7 +20,8 @@
     margin-left: 10%;
   }
 
-  p {
-    color: rgb(45, 91, 45);
+  li {
+    color: black;
+    font-size: 20px;
   }
 </style>

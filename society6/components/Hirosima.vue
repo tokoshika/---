@@ -11,8 +11,8 @@
         >約14万人</span
       >が亡くなられたと推計しています。
     </p>
+    <p><span style="color:green">(広島市ホームページより抜粋)</span></p>
   </div>
-  <p>(広島市ホームページより抜粋)</p>
 </template>
 
 <script setup>

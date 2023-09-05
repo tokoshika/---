@@ -6,8 +6,12 @@
       重軽傷者 :74,909人<br />
       合計 148,793人
     </p>
+    <p>
+      <span style="color: green"
+        >（ながさきの平和（長崎市平和推進課）HPより抜粋）</span
+      >
+    </p>
   </div>
-  <p>（ながさきの平和（長崎市平和推進課）HPより抜粋）</p>
 </template>
 
 <script setup>

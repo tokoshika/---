@@ -12,7 +12,7 @@
       しかしながら、被害者の具体的な人数については諸説あり、<br />
       政府としてどれが正しい数かを認定することは困難であると考えています。
     </p>
-    <p>(日本国外務省ホームページより抜粋)</p>
+    <p><span style="color: green">(日本国外務省ホームページより抜粋)</span></p>
   </div>
 
   <div v-if="isActive">
@@ -67,8 +67,8 @@
   }
 
   .red {
-    color: red;
-    background-color: grey;
+    color:white;
+    background-color: dimgrey;
   }
 
   .nanjin,
