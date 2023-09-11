@@ -13,6 +13,9 @@
         <li>
           <NuxtLink to="/map">地図</NuxtLink>
         </li>
+        <li>
+          <NuxtLink to="/friend">お友達</NuxtLink>
+        </li>
       </ul>
     </nav>
   </header>

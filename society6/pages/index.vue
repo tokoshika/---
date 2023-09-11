@@ -14,6 +14,10 @@
 
     <hr style="width: 400px; margin-left: 0" color="red" />
     <li>韓国でおきた事</li>
+    <Korea />
+
+    <li>アメリカでおきた事</li>
+    <America />
   </div>
 </template>
 
