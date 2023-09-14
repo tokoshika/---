@@ -56,6 +56,7 @@
     </div>
     <br />
     <h2 v-if="againOpen">8月15日・・・開放記念日（光復節）</h2>
+    <br />
   </div>
 </template>
 
