@@ -47,8 +47,8 @@
     <br />
 
     <div class="btn-container">
-      <button class="question" style="margin-top: 5rem" @click="question">
-        ここで問題です！
+      <button class="question" style="margin-top: 1rem" @click="question">
+        ここで問題！
       </button>
       <p v-if="questionOpen" @click="questionAgain">
         韓国の終戦記念日はいつでしょう？
