@@ -45,6 +45,17 @@
       </p>
     </div>
     <br />
+
+    <div class="btn-container">
+      <button class="question" style="margin-top: 5rem" @click="question">
+        ここで問題です！
+      </button>
+      <p v-if="questionOpen" @click="questionAgain">
+        韓国の終戦記念日はいつでしょう？
+      </p>
+    </div>
+    <br />
+    <h2 v-if="againOpen">8月15日・・・開放記念日（光復節）</h2>
   </div>
 </template>
 
@@ -56,6 +67,8 @@
   const isOpenAmerica = ref(false);
   const isOpenRussia = ref(false);
   const isOpenPutin = ref(false);
+  const questionOpen = ref(false);
+  const againOpen = ref(false);
   const china = () => {
     isOpen.value = !isOpen.value;
   };
@@ -74,6 +87,12 @@
   const putin = () => {
     isOpenPutin.value = !isOpenPutin.value;
   };
+  const question = () => {
+    questionOpen.value = !questionOpen.value;
+  };
+  const questionAgain = () => {
+    againOpen.value = !againOpen.value;
+  };
 </script>
 
 <style scoped>
@@ -82,7 +101,8 @@
   .russia,
   .taiwan,
   .china,
-  .putin {
+  .putin,
+  .question {
     font-size: 2rem;
     width: 300px;
     margin-bottom: 0.5rem;
